@@ -1,0 +1,6 @@
+Instruções de instalação:
+
+    Certifique-se que você possui instalado os seguintes pacotes:
+    - python
+    - python-cwiid
+    - python-gtk
