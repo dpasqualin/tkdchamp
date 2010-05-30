@@ -134,6 +134,10 @@ class Fight(object):
         self.l_blue_name = self.Main_Window.get_widget("l_fighter_blue_name")
         self.l_red_name = self.Main_Window.get_widget("l_fighter_red_name")
 
+        # Seta cor de fundo das caixas onde aparecem os pontos
+        ebox_blue.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("blue"))
+        ebox_red.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("red"))
+
         self.interfaces = self.get_interfaces()
 
         # Menu item 'interface selecion'
@@ -149,10 +153,6 @@ class Fight(object):
 
         # Stop counting until the number of judges be set
         self.PointCounter.stop_counting()
-
-        # Seta cor de fundo das caixas onde aparecem os pontos
-        ebox_blue.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("blue"))
-        ebox_red.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("red"))
 
         # Define interface dos juizes com o jogo
         # TODO: descobrir através de menu ou .conf qual interface o
