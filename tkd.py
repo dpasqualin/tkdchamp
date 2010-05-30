@@ -5,6 +5,7 @@ import os, math, pango, gtk, gtk.glade
 import threading, imp, sys
 from interfaces import keyboard, wiimote
 from time import time as gettime
+from misc import FighterNames
 Semaphore = threading.Semaphore
 
 sys.path.append(os.path.abspath('.')+'/interfaces')
@@ -129,6 +130,9 @@ class Fight(object):
         b_f1f = self.Main_Window.get_widget('b_f1f')
         b_f2mf = self.Main_Window.get_widget('b_f2mf')
         b_f2f = self.Main_Window.get_widget('b_f2f')
+        # Nomes dos lutadores
+        self.l_blue_name = self.Main_Window.get_widget("l_fighter_blue_name")
+        self.l_red_name = self.Main_Window.get_widget("l_fighter_red_name")
 
         self.interfaces = self.get_interfaces()
 
@@ -210,7 +214,13 @@ class Fight(object):
     def new_game(self, widget):
         self._zera_pontos()
         self._zera_faltas()
+        blue_name,red_name = FighterNames().run()
+        self.write_names(blue_name,red_name)
         self.PointCounter.start_counting()
+
+    def write_names(self,blue,red):
+        self.l_blue_name.set_text(blue)
+        self.l_red_name.set_text(red)
 
     def set_text_point(self, widget, n):
         self.sem_points.acquire()
