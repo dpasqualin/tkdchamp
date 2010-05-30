@@ -31,8 +31,8 @@ class FighterNames(object):
 
         # Usuario selecionou OK
         if result == 0:
-            self.blue = self.c_blue.get_active_text()
-            self.red = self.c_red.get_active_text()
+            self.blue = self.c_blue.get_active_text() or "Convidado"
+            self.red = self.c_red.get_active_text() or "Convidado"
         self.w_mainWindow.destroy()
         return self.blue,self.red
 
