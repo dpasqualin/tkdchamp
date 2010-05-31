@@ -219,8 +219,12 @@ class Fight(object):
         self.PointCounter.start_counting()
 
     def write_names(self,blue,red):
-        self.l_blue_name.set_text(blue)
-        self.l_red_name.set_text(red)
+        """ Escreve o nome dos lutadores na tela """
+        self.l_blue_name.set_text("<b>"+blue.title()+"</b>")
+        self.l_red_name.set_text("<b>"+red.titlet()+"</b>")
+        # Aceitar marcacao
+        self.l_blue_name.set_use_markup(True)
+        self.l_red_name.set_use_markup(True)
 
     def set_text_point(self, widget, n):
         self.sem_points.acquire()
