@@ -290,13 +290,13 @@
               </packing>
             </child>
             <child>
-              <widget class="GtkLabel" id="l_fighter_blue_name">
+              <widget class="GtkLabel" id="l_fighter_red_name">
                 <property name="visible">True</property>
                 <property name="use_markup">True</property>
               </widget>
             </child>
             <child>
-              <widget class="GtkLabel" id="l_fighter_red_name">
+              <widget class="GtkLabel" id="l_fighter_blue_name">
                 <property name="visible">True</property>
                 <property name="use_markup">True</property>
               </widget>

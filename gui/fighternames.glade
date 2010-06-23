@@ -35,14 +35,14 @@
                   <widget class="GtkLabel" id="label1">
                     <property name="width_request">100</property>
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">Azul</property>
+                    <property name="label" translatable="yes">Vermelho</property>
                   </widget>
                   <packing>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkComboBoxEntry" id="c_fighterblue">
+                  <widget class="GtkComboBoxEntry" id="c_fighterred">
                     <property name="visible">True</property>
                     <property name="items" translatable="yes"></property>
                   </widget>
@@ -64,14 +64,14 @@
                   <widget class="GtkLabel" id="label2">
                     <property name="width_request">100</property>
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">Vermelho</property>
+                    <property name="label" translatable="yes">Azul</property>
                   </widget>
                   <packing>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkComboBoxEntry" id="c_fighterred">
+                  <widget class="GtkComboBoxEntry" id="c_fighterblue">
                     <property name="visible">True</property>
                   </widget>
                   <packing>
