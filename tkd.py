@@ -221,7 +221,7 @@ class Fight(object):
     def write_names(self,blue,red):
         """ Escreve o nome dos lutadores na tela """
         self.l_blue_name.set_text("<b>"+blue.title()+"</b>")
-        self.l_red_name.set_text("<b>"+red.titlet()+"</b>")
+        self.l_red_name.set_text("<b>"+red.title()+"</b>")
         # Aceitar marcacao
         self.l_blue_name.set_use_markup(True)
         self.l_red_name.set_use_markup(True)
