@@ -26,20 +26,6 @@ class Fight:
         # Current round
         self.__round = 1
 
-        # Events offered by this class
-        self.__eventManager = eventManager
-        if self.__eventManager:
-            self.__eventManager.addEvent(self.addPoint)
-            self.__eventManager.addEvent(self.addFault)
-            self.__eventManager.addEvent(self.addHalfFault)
-            self.__eventManager.addEvent(self.pause)
-            self.__eventManager.addEvent(self.unpause)
-            self.__eventManager.addEvent(self.finish)
-            self.__eventManager.addEvent(self.start)
-            self.__eventManager.addEvent(self.nextRound)
-            self.__eventManager.addEvent(self.judgeSignal)
-            self.__eventManager.addEvent(self.addJudge)
-
     def getPointCounter(self):
         return self.__pc
 
