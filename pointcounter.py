@@ -32,7 +32,7 @@ class PointCounter(object):
 
     def getNJudge(self):
         """ Return the number of judges connected """
-        return self.__nJudge
+        return len(self.__judgeList)
 
     def addJudge(self, judge):
         """ Add a new judge to judge list """
