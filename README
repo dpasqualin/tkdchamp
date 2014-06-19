@@ -3,4 +3,5 @@ Instruções de instalação:
     Certifique-se que você possui instalado os seguintes pacotes:
     - python
     - python-cwiid
-    - python-gtk
+    - python-gtk2
+    - python-glade2
